@@ -5,14 +5,12 @@ function getRandomNumber(max) {
   }  
 console.log('El número aleatorio es ' + getRandomNumber(100));
 
-const randomNumber = getRandomNumber(100);
-
 //variables
+const randomNumber = getRandomNumber(100);
 const input = document.querySelector('.main__input');
 const counter = document.querySelector('.main__counter');
 const hints = document.querySelector('.main__instructions');
 const btn = document.querySelector('.main__btn');
-let inputValue = parseInt(input.value);
 
 //Al pulsar el botón, acceder al value del input y mostrarlo en consola.
 function send(event){
@@ -26,6 +24,7 @@ btn.addEventListener('click', send);
 //Comparar el número que el usuario ha escrito en el input y mostrarlo en consola
 
 function compare(){
+    let inputValue = parseInt(input.value);
     console.log('>',randomNumber,inputValue);
     if(inputValue === randomNumber) {
         hints.innerHTML = '¡HAS GANADO, CAMPEONA!';
@@ -42,5 +41,7 @@ function compare(){
 btn.addEventListener('click', compare);
 
 //actualizar el contador de intentos
-
+for (let i = 1; i < 100; i++){
+    counter+=i;
+};
 
