@@ -7,14 +7,13 @@ const hints = document.querySelector('.main__instructions');
 const btn = document.querySelector('.main__btn');
 const randomNumber = getRandomNumber(100);
 let c = 0;
+counter.innerHTML = c;
 
 //generar número aleatorio y mostrarlo por consola
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
-  }  
-  console.log('El número aleatorio es ' + randomNumber);
-
-counter.innerHTML = c;
+}  
+console.log('El número aleatorio es ' + randomNumber);
 
 //Al pulsar el botón, acceder al value del input y mostrarlo en consola.
 function send(event){
@@ -32,9 +31,13 @@ function compare(){
     }
     else if(inputValue < randomNumber) {
         hints.innerHTML = 'Demasiado bajo';
+        c = c+1;
+        counter.innerHTML = c;
     }
     else {
-        hints.innerHTML = 'Demasiado alto';  
+        hints.innerHTML = 'Demasiado alto';
+        c = c+1;  
+        counter.innerHTML = c;
     };
 }
 
@@ -42,8 +45,7 @@ function compare(){
 function all(){
     send(event);
     compare();
-    c = c+1;
 }
 
 //pintar el feedback
-btn.addEventListener('click', all);
+btn.addEventListener('click', compare);
