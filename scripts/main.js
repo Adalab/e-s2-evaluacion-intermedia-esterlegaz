@@ -3,10 +3,11 @@
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }  
-console.log('El número aleatorio es ' + getRandomNumber(100));
+  const randomNumber = getRandomNumber(100);
+  console.log('El número aleatorio es ' + randomNumber);
 
 //variables
-const randomNumber = getRandomNumber(100);
+
 const input = document.querySelector('.main__input');
 const counter = document.querySelector('.main__counter');
 const hints = document.querySelector('.main__instructions');
@@ -41,7 +42,3 @@ function compare(){
 btn.addEventListener('click', compare);
 
 //actualizar el contador de intentos
-for (let i = 1; i < 100; i++){
-    counter+=i;
-};
-
