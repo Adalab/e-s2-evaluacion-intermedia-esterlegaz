@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,19 @@
     <title>Evaluación intermedia - Ester Legaz</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-    <h1 class="main__title">Adivina el número</h1>
-    <label for="main__input" class="main__subtitle">Introduce aquí el número
-    <input id="main__input" class="main__input" type="number" min="0" max="100">
-    <button class="main__btn">Prueba</button>
-    <div class="main__counter"></div>
-    <div class="main__instructions">Escribe un número y dale a Prueba</div>
+    <div class="main__container">
+        <h1 class="main__title">Adivina el número</h1>
+        <div class="form__container">
+            <label for="main__input" class="main__subtitle">Introduce aquí el número
+            <input id="main__input" class="main__input" type="number" min="0" max="100">
+            <button class="main__btn">Prueba</button>
+        </div>
+        <div class="main__counter"></div>
+        <div class="main__instructions">Escribe un número y dale a Prueba</div>
+    </div>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box:
+}
+
+body{
+    margin: 0;
+}
+
+.main__container{
+    height: 100vh;
+    background: lightgrey;
+}
+
+.main__counter{
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 20px 0 0;
+}
+
+.main__title{
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.main__subtitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main__input{
+    width: 200px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.main__btn{
+    width: 200px;
+    height: 30px;
+    margin: 10px 0;
+    background: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__container{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.main__instructions{
+    border: 2px solid blue;
+    height: 50px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+}
